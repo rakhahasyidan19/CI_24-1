@@ -1,21 +1,24 @@
 </div>
 </div>
-
+</div>
 
 <script src="<?= base_url('assets/vendor/jquery/jquery.min.js'); ?>"></script>
-<script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
-<!-- DataTables CSS -->
-<script src="<?= base_url('assets/vendor/datatables/jquery.dataTables.min.js') ?>"></script>
-<script src="<?= base_url('assets/vendor/datatables/dataTables.bootstrap4.min.js') ?>"></script> 
-<script src="<?= base_url('assets/js/sb-admin-2.min.js');?>"></script>
+<script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+
+<!-- DataTables JS -->
+<script src="<?= base_url('assets/vendor/datatables/jquery.dataTables.min.js'); ?>"></script>
+<script src="<?= base_url('assets/vendor/datatables/dataTables.bootstrap4.min.js'); ?>"></script>
+
+<script src="<?= base_url('assets/js/sb-admin-2.min.js'); ?>"></script>
 
 <script>
-    $(document).ready(function(){
+$(document).ready(function() {
     $('#dataTable').DataTable({
         "language": {
-            "search": "Cari:",
-            "lengthMenu": "Tampilkan _MENU_ data",
-            "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ data",
+            "search": "Cari Anggota:",
+            "lengthMenu": "Tampilkan _MENU_ data anggota",
+            "info": "Menampilkan _START_ sampai _END_ dari _TOTAL_ anggota",
+            "zeroRecords": "Data anggota tidak ditemukan",
             "paginate":{
                 "previous": "Sebelumnya",
                 "next": "Berikutnya"
