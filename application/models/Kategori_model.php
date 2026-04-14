@@ -31,4 +31,5 @@ class kategori_model extends CI_Model{
         $this->db->where('id',$id);
         return $this->db->update($this->table, $data);
     }
+    
 }
