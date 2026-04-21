@@ -1,38 +1,63 @@
 <div class="container-fluid">
-<h3 class="mb-4">Edit Data Anggota</h3>
+<h2 class="h3 mb-4 text-gray-800">Edit Anggota</h2>
 
+<div class="card shadow">
+<div class="card-body">
 <form method="post" action="<?= site_url('anggota/update/'.$anggota->id_anggota); ?>">
-
+<!-- id_anggota -->
 <div class="form-group">
-    <label>Nomor Anggota</label>
-    <input type="text" name="nomor_anggota" value="<?= $anggota->nomor_anggota; ?>" class="form-control">
+    <label>id_anggota</label>
+    <input type="text" name="id_anggota" class="form-control" 
+           value="<?= $anggota->id_anggota; ?>" required>
 </div>
 
+<!-- nomor_anggota -->
+<div class="form-group">
+    <label>nomor_anggota</label>
+    <input type="text" name="nomor_anggota" class="form-control" 
+           value="<?= $anggota->nomor_anggota; ?>" required>
+</div>
+
+
+<!-- Nama -->
 <div class="form-group">
     <label>Nama</label>
-    <input type="text" name="nama" value="<?= $anggota->nama; ?>" class="form-control">
+    <input type="text" name="nama" class="form-control" 
+           value="<?= $anggota->nama; ?>" required>
 </div>
 
+<!-- Alamat -->
 <div class="form-group">
     <label>Alamat</label>
-    <textarea name="alamat" class="form-control"><?= $anggota->alamat; ?></textarea>
+    <input type="text" name="alamat" class="form-control" 
+           value="<?= $anggota->alamat; ?>" required>
 </div>
 
+<!-- Telepon -->
 <div class="form-group">
     <label>Telepon</label>
-    <input type="text" name="telepon" value="<?= $anggota->telepon; ?>" class="form-control">
+    <input type="text" name="telepon" class="form-control" 
+           value="<?= $anggota->telepon; ?>" required>
 </div>
 
+<!-- Email -->
 <div class="form-group">
     <label>Email</label>
-    <input type="email" name="email" value="<?= $anggota->email; ?>" class="form-control">
+    <input type="text" name="email" class="form-control" 
+           value="<?= $anggota->email; ?>" required>
 </div>
 
 <div class="form-group">
     <label>Tanggal Daftar</label>
-    <input type="date" name="tanggal_daftar" value="<?= $anggota->tanggal_daftar; ?>" class="form-control">
+    <input type="date" name="tanggal_daftar" class="form-control" 
+           value="<?= $anggota->tanggal_daftar; ?>" required>
 </div>
+
 <button type="submit" class="btn btn-primary">Update</button>
-<a href="<?= site_url('anggota'); ?>" class="btn btn-secondary">Kembali</a>
+<a href="<?= site_url('anggota');?>" class="btn btn-secondary">Kembali</a>
+
 </form>
+
+</div>
+</div>
 </div>

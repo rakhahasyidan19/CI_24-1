@@ -9,7 +9,7 @@
         <table class="table table-bordered" id="dataTable">
             <thead>
                 <tr>
-                    <th>No</th>
+                    <th>Id Anggota</th>
                     <th>Nomor Anggota</th>
                     <th>Nama</th>
                     <th>Alamat</th>
@@ -22,8 +22,8 @@
             <tbody>
             <?php $no=1; foreach($anggota as $a): ?>
                 <tr>
-                    <td><?= $no++; ?></td>
                     <td><?= $a->id_anggota; ?></td>
+                    <td><?= $a->nomor_anggota; ?></td>
                     <td><?= $a->nama; ?></td>
                     <td><?= $a->alamat; ?></td>
                     <td><?= $a->telepon; ?></td>
