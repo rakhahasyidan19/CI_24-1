@@ -29,6 +29,27 @@
     </a>
 </li>
 
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('buku'); ?>">
+        <i class="fas fa-fw fa-users"></i>
+        <span>buku</span>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('peminjaman'); ?>">
+        <i class="fas fa-fw fa-users"></i>
+        <span>peminjaman</span>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url('laporan/peminjaman'); ?>">
+        <i class="fas fa-fw fa-users"></i>
+        <span>laporan peminjaman</span>
+    </a>
+</li>
+
 </ul>
 <div id="content-wrapper" class="d-flex flex-column">
     <div id="content">
